@@ -33,6 +33,12 @@ Contributions are not just welcomed but actively desired!
 If you're interested in contributing, please check the Issues
 page for bugs, feature requests, and beginner friendly tasks. 
 
+### Donations
+I am physically disabled and do this and hardware repair to support myself; if you feel generous and 
+can afford to do so, every penny helps out! 
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/H5F5269IH4)
+
 Feel free to open an issue for suggestions or ideas!
 
 
