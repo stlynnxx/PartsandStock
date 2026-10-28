@@ -43,6 +43,7 @@ public static class JsonStore
 
     public static void Save<T>(string path, List<T> items)
     {
-        File.WriteAllText(path, JsonSerializer.Serialize(items, Options));
+        string json = JsonSerializer.Serialize(items, Options);
+        File.WriteAllText(path, json + Environment.NewLine);
     }
 }
