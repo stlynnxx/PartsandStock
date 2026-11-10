@@ -33,14 +33,14 @@ The following functionality is implemented or partially implemented:
 
 Development is organized into milestones, with the primary focus on completing the free CLI version.
 
-### Phase 1 — CLI Foundation
+### Phase 1 CLI Foundation
 
 - [ ] Standardize inventory data models.
 - [ ] Centralize JSON file handling and persistence.
 - [ ] Improve CLI navigation and input validation.
 - [ ] Implement reliable, unique item numbering.
 
-### Phase 2 — Core Inventory Management
+### Phase 2 Core Inventory Management
 
 - [ ] Complete inventory item creation and validation.
 - [ ] View complete inventory records.
@@ -48,7 +48,7 @@ Development is organized into milestones, with the primary focus on completing t
 - [ ] Delete inventory items with confirmation.
 - [ ] Adjust stock and quantity.
 
-### Phase 3 — Searching and Filtering
+### Phase 3 Searching and Filtering
 
 - [ ] Search by item name.
 - [ ] Search by item number.
@@ -58,7 +58,7 @@ Development is organized into milestones, with the primary focus on completing t
 - [ ] Support multiple search results and consistent result formatting.
 - [ ] Implement advanced filtering.
 
-### Phase 4 — Location Management
+### Phase 4 Location Management
 
 - [ ] Complete storage location creation, editing, viewing, and deletion.
 - [ ] Support hierarchical storage locations and sublocations.
@@ -66,7 +66,7 @@ Development is organized into milestones, with the primary focus on completing t
 - [ ] Associate inventory records with sourcing and storage locations.
 - [ ] Prevent accidental deletion of locations referenced by inventory items.
 
-### Phase 5 — Stability and Testing
+### Phase 5 Stability and Testing
 
 - [ ] Implement automated testing for core inventory operations.
 - [ ] Improve error handling and data validation.
@@ -75,7 +75,7 @@ Development is organized into milestones, with the primary focus on completing t
 - [ ] Test installation and operation on clean systems.
 - [ ] Prepare documentation and release packaging.
 
-### Phase 6 — CLI v1.0.0 Release
+### Phase 6 CLI v1.0.0 Release
 
 The first stable release will provide the essential functionality needed to manage physical inventory through a terminal interface.
 
@@ -88,7 +88,7 @@ After completing the CLI version, development will expand toward a locally hoste
 Planned future enhancements include:
 
 - **Locally Hosted Web Interface:** Browser-based inventory management accessible across a local network.
-- **SQLite Database Backend:** An alternative to JSON-based storage.
+- **SQLite Database Backend:** An alternative to JSON based storage.
 - **Barcode and QR Code Support:** Generate and scan labels for faster inventory identification.
 - **Inventory Statistics:** Analyze stock levels, inventory value, and other useful metrics.
 - **Advanced Searching and Filtering:** More powerful inventory queries and reporting.
@@ -135,8 +135,8 @@ As a physically disabled developer and small business owner, I rely on this work
 
 You can support development through:
 
-- **[GitHub Sponsors](https://github.com/sponsors/stlynnxx)** — Support ongoing open-source development through GitHub.
-- **[Ko-fi](https://ko-fi.com/H5F5269IH4)** — Make a one-time contribution to support the project.
+- **[GitHub Sponsors](https://github.com/sponsors/stlynnxx)** Support ongoing open-source development through GitHub.
+- **[Ko-fi](https://ko-fi.com/H5F5269IH4)** — Make a one time contribution to support the project.
 
 Financial support is entirely optional. Contributions through code, testing, documentation, bug reports, and feedback are equally appreciated.
 
