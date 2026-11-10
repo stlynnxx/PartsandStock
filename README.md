@@ -35,45 +35,45 @@ Development is organized into milestones, with the primary focus on completing t
 
 ### Phase 1 CLI Foundation
 
-- [ ] Standardize inventory data models.
-- [ ] Centralize JSON file handling and persistence.
-- [ ] Improve CLI navigation and input validation.
-- [ ] Implement reliable, unique item numbering.
+- Standardize inventory data models.
+- Centralize JSON file handling and persistence.
+- Improve CLI navigation and input validation.
+- Implement reliable, unique item numbering.
 
 ### Phase 2 Core Inventory Management
 
-- [ ] Complete inventory item creation and validation.
-- [ ] View complete inventory records.
-- [ ] Edit existing inventory items.
-- [ ] Delete inventory items with confirmation.
-- [ ] Adjust stock and quantity.
+- Complete inventory item creation and validation.
+- View complete inventory records.
+- Edit existing inventory items.
+- Delete inventory items with confirmation.
+- Adjust stock and quantity.
 
 ### Phase 3 Searching and Filtering
 
-- [ ] Search by item name.
-- [ ] Search by item number.
-- [ ] Search by storage location.
-- [ ] Search by sourcing location.
-- [ ] Search by additional inventory fields.
-- [ ] Support multiple search results and consistent result formatting.
-- [ ] Implement advanced filtering.
+- Search by item name.
+- Search by item number.
+- Search by storage location.
+- Search by sourcing location.
+- Search by additional inventory fields.
+- Support multiple search results and consistent result formatting.
+- Implement advanced filtering.
 
 ### Phase 4 Location Management
 
-- [ ] Complete storage location creation, editing, viewing, and deletion.
-- [ ] Support hierarchical storage locations and sublocations.
-- [ ] Complete sourcing location management.
-- [ ] Associate inventory records with sourcing and storage locations.
-- [ ] Prevent accidental deletion of locations referenced by inventory items.
+- Complete storage location creation, editing, viewing, and deletion.
+- Support hierarchical storage locations and sublocations.
+- Complete sourcing location management.
+- Associate inventory records with sourcing and storage locations.
+- Prevent accidental deletion of locations referenced by inventory items.
 
 ### Phase 5 Stability and Testing
 
-- [ ] Implement automated testing for core inventory operations.
-- [ ] Improve error handling and data validation.
-- [ ] Protect against accidental data loss.
-- [ ] Implement inventory backup and restoration.
-- [ ] Test installation and operation on clean systems.
-- [ ] Prepare documentation and release packaging.
+- Implement automated testing for core inventory operations.
+- Improve error handling and data validation.
+- Protect against accidental data loss.
+- Implement inventory backup and restoration.
+- Test installation and operation on clean systems.
+- Prepare documentation and release packaging.
 
 ### Phase 6 CLI v1.0.0 Release
 
