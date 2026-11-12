@@ -16,8 +16,8 @@ public class AddItem
             ItemName          = Read.RequiredText("Item Name: "),
             ItemDescription   = Read.Text("Item Description: "),
             ItemPrice         = Read.Decimal("Item Price: "),
-            ItemQuantity      = Read.Int("Item Quantity: "),
-            ItemPurchaseDate  = Read.Text("Item Purchase Date: "),
+            ItemQuantity      = Read.Int("Item Quantity: ", 1),
+            ItemPurchaseDate  = Read.PastOrTodayDate("Item Purchase Date: "),
             StorageLocation   = Read.Text("Storage Location (optional): "),
             SourcingLocation  = Read.Text("Sourcing Location (optional): ")
         };

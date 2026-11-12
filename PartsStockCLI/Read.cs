@@ -40,6 +40,27 @@ public static class Read
         }
     }
 
+    public static string PastOrTodayDate(string prompt)
+    {
+        while (true)
+        {
+            string raw = Text(prompt).Trim();
+    
+            if (DateTime.TryParse(raw, out DateTime date))
+            {
+                if (date.Date <= DateTime.Today)
+                {
+                    return date.ToString("yyyy-MM-dd");
+                }
+    
+                Console.WriteLine("  Future dates are not allowed.");
+                continue;
+            }
+    
+            Console.WriteLine("  Enter a valid date in YYYY-MM-DD format.");
+        }
+    }
+
     public static bool Yes(string prompt)
     {
         string raw = Text(prompt).Trim().ToLowerInvariant();
