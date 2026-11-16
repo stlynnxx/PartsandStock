@@ -2,12 +2,18 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PartsStockCLI", "PartsStockCLI\PartsStockCLI.csproj", "{523FD627-08EA-4D98-935C-3EF8F7CF636C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PartsStockCLI.Tests", "PartsStockCLI.Tests\PartsStockCLI.Tests.csproj", "{8A9F8E2C-DB4B-4A52-8E66-1A5D3D56A001}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8A9F8E2C-DB4B-4A52-8E66-1A5D3D56A001}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A9F8E2C-DB4B-4A52-8E66-1A5D3D56A001}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A9F8E2C-DB4B-4A52-8E66-1A5D3D56A001}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A9F8E2C-DB4B-4A52-8E66-1A5D3D56A001}.Release|Any CPU.Build.0 = Release|Any CPU
 		{523FD627-08EA-4D98-935C-3EF8F7CF636C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{523FD627-08EA-4D98-935C-3EF8F7CF636C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{523FD627-08EA-4D98-935C-3EF8F7CF636C}.Release|Any CPU.ActiveCfg = Release|Any CPU
