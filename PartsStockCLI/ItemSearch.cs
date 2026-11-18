@@ -4,7 +4,7 @@ public class ItemSearch
     private readonly InventoryService _inventory;
     public ItemSearch() : this(new InventoryService(JsonStore.DocumentsPath("ItemList.json"))) { }
     public ItemSearch(InventoryService inventory) => _inventory = inventory ?? throw new ArgumentNullException(nameof(inventory));
-    public void Menu()
+    public int Menu()
     {
         while (true)
         {
@@ -24,11 +24,12 @@ public class ItemSearch
                     break;
                 case "3": DisplayResults(_inventory.SearchByStorageLocation(Read.Text("Enter storage location name: ")), "Storage Location"); break;
                 case "4": DisplayResults(_inventory.SearchBySourcingLocation(Read.Text("Enter sourcing location name: ")), "Sourcing Location"); break;
-                case "5": return;
+                case "5": return 1;
                 default: Console.WriteLine("Invalid option."); break;
             }
             Console.WriteLine("\nPress Enter to continue...");
             Read.Text("");
+            return 1;
         }
     }
     private static void DisplayResults(IReadOnlyList<Item> matches, string searchType)

@@ -4,7 +4,7 @@ public class Sourcing
 {
     private static readonly string Path_ = JsonStore.DocumentsPath("Sourcing.json");
 
-    public void Main()
+    public int Main()
     {
         Console.Clear();
         Console.WriteLine("--------");
@@ -23,9 +23,11 @@ public class Sourcing
             case "2": LoadSourcingLocation(); break;
             case "3": DeleteSourcingLocation(); break;
             case "4": ReviewSourcingLocations(); break;
-            case "5": return;
+            case "5": return 1;
             default: Console.WriteLine("Invalid input."); break;
         }
+
+        return 1;
     }
 
     private static void AddSourcingLocation()

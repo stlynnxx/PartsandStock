@@ -4,10 +4,15 @@ namespace PartsStockCLI
     {
         public static void Main()
         {
+            int returnVal = 0;
             int navChoice = 0;
             Display.Art();
             navChoice = Display.Menu();
-            Display.Navigate(navChoice);
+            returnVal = Display.Navigate(navChoice);
+            if (returnVal == 0)
+            {
+                throw new IOException();
+            }
         }
 
         public class Display
@@ -36,26 +41,31 @@ namespace PartsStockCLI
                 return input;
             }
 
-            public static void Navigate(int navChoice)
+            public static int Navigate(int navChoice)
             {
                 StorageLocations storageLocations = new StorageLocations();
                 AddItem add = new AddItem();
                 Sourcing sourcing = new Sourcing();
                 ItemSearch search = new ItemSearch();
+                int ret = 0;
                 switch (navChoice)
                 {
-                    case 1: add.NewItem(); break;
-                    case 2: search.Menu(); break;
-                    case 3: sourcing.Main(); break;
-                    case 4: storageLocations.StorageMain(); break;
+                    case 1: ret = add.NewItem(); break;
+                    case 2: ret = search.Menu(); break;
+                    case 3: ret = sourcing.Main(); break;
+                    case 4: ret = storageLocations.StorageMain(); break;
                     case 5:
                         Console.Clear();
                         Console.WriteLine("Come back soon!");
+                        System.Environment.Exit(0);
                         break;
                     default:
                         Console.WriteLine("Invalid selection.");
                         break;
                 }
+
+                return ret;
+
 
 
 

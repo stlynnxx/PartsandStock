@@ -11,7 +11,7 @@ public class StorageLocations
 
     // ---------- Entry point ----------
 
-    public void StorageMain()
+    public int StorageMain()
     {
         Console.Clear();
         Console.WriteLine("Storage Menu");
@@ -28,9 +28,11 @@ public class StorageLocations
             case "2": Console.WriteLine("Not implemented yet."); break;
             case "3": CreateLocation(); break;
             case "4": ViewItemsByStorageLocation(); break;
-            case "5": return;
+            case "5": return 1;
             default: Console.WriteLine("Invalid input."); break;
         }
+
+        return 1;
     }
 
     // ---------- Load / browse ----------
