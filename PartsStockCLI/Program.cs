@@ -8,7 +8,7 @@ namespace PartsStockCLI
             int navChoice = 0;
             Display.Art();
             navChoice = Display.Menu();
-            returnVal = Display.Navigate(navChoice);
+            returnVal = Display.MenuNavigate(navChoice);
             if (returnVal == 0)
             {
                 throw new IOException();
@@ -41,7 +41,7 @@ namespace PartsStockCLI
                 return input;
             }
 
-            public static int Navigate(int navChoice)
+            public static int MenuNavigate(int navChoice)
             {
                 StorageLocations storageLocations = new StorageLocations();
                 AddItem add = new AddItem();
