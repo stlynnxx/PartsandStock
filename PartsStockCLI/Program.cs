@@ -4,9 +4,10 @@ namespace PartsStockCLI
     {
         public static void Main()
         {
+            int navChoice = 0;
             Display.Art();
-            Route r = new Route();
-            r.Routed();
+            navChoice = Display.Menu();
+            Display.Navigate(navChoice);
         }
 
         public class Display
@@ -20,12 +21,10 @@ namespace PartsStockCLI
                 Console.WriteLine(art);
                 Console.ResetColor();
             }
-        }
 
-        public class Menu
-        {
-            public static int Home()
+            public static int Menu()
             {
+                int input = 0;
                 Console.WriteLine("-------------------------");
                 Console.WriteLine("1) New Item");
                 Console.WriteLine("2) Item Search");
@@ -33,40 +32,38 @@ namespace PartsStockCLI
                 Console.WriteLine("4) Storage Location Setup");
                 Console.WriteLine("5) Exit");
                 Console.WriteLine("------------------------");
-                return Read.Int("Choice: ", min: 1);
+                input = Convert.ToInt32(Console.ReadLine());
+                return input;
             }
-        }
 
-        class Route
-        {
-            public void Routed()
+            public static void Navigate(int navChoice)
             {
                 StorageLocations storageLocations = new StorageLocations();
                 AddItem add = new AddItem();
                 Sourcing sourcing = new Sourcing();
                 ItemSearch search = new ItemSearch();
-                bool running = true;
-                while (running)
+                switch (navChoice)
                 {
-                    Console.WriteLine();
-                    int userIn = Menu.Home();
-                    switch (userIn)
-                    {
-                        case 1: add.NewItem(); break;
-                        case 2: search.Menu(); break;
-                        case 3: sourcing.Main(); break;
-                        case 4: storageLocations.StorageMain(); break;
-                        case 5:
-                            Console.Clear();
-                            Console.WriteLine("Come back soon!");
-                            running = false;
-                            break;
-                        default:
-                            Console.WriteLine("Invalid selection.");
-                            break;
-                    }
+                    case 1: add.NewItem(); break;
+                    case 2: search.Menu(); break;
+                    case 3: sourcing.Main(); break;
+                    case 4: storageLocations.StorageMain(); break;
+                    case 5:
+                        Console.Clear();
+                        Console.WriteLine("Come back soon!");
+                        break;
+                    default:
+                        Console.WriteLine("Invalid selection.");
+                        break;
                 }
+
+
+
             }
+
+
+
+
         }
     }
 }
