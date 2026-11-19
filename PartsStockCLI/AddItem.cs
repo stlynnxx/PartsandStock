@@ -4,6 +4,7 @@ public class AddItem
     private readonly InventoryService _inventory;
     public AddItem() : this(new InventoryService(JsonStore.DocumentsPath("ItemList.json"))) { }
     public AddItem(InventoryService inventory) => _inventory = inventory ?? throw new ArgumentNullException(nameof(inventory));
+
     public int NewItem()
     {
         Console.Clear();
@@ -22,7 +23,9 @@ public class AddItem
         };
         _inventory.Create(item);
         Console.WriteLine();
-        Console.WriteLine($"Item Added! (Item Number {item.ItemNumber})");
+        Console.WriteLine(
+            $"Item Added! (Item Number {item.ItemNumber:D9})"
+        );
         return 1;
     }
 }

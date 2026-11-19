@@ -489,5 +489,6 @@ Notes-
 The city field needs removed from sublocation metadata
 How the location/sublocation is formatted in json needs cleaned up
 
-10/24/2026-
+11/19/2026-
 
+I've adapted some of the existing logic to use a 9 digit item number and added number persistence between closes. 

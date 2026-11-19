@@ -5,7 +5,7 @@ namespace PartsStockCLI;
 public class Item
 {
     public string ItemName { get; set; } = "";
-    public int ItemNumber { get; set; }
+    public long ItemNumber { get; set; }
     public string ItemDescription { get; set; } = "";
     public decimal ItemPrice { get; set; }
     public int ItemQuantity { get; set; }
@@ -16,7 +16,7 @@ public class Item
 
     public override string ToString()
     {
-        return $"Item Name: {ItemName} | Item Number: {ItemNumber}\n" +
+        return $"Item Name: {{ItemName}} | Item Number: {{ItemNumber:D9}}\n\"" +
                $"Description: {ItemDescription} | Price: ${ItemPrice}\n" +
                $"Quantity: {ItemQuantity} | Stock: {ItemStock}\n" +
                $"Purchase Date: {ItemPurchaseDate}\n" +
