@@ -16,7 +16,7 @@ public class Item
 
     public override string ToString()
     {
-        return $"Item Name: {{ItemName}} | Item Number: {{ItemNumber:D9}}\n\"" +
+        return $"Item Name: {ItemName} | Item Number: {ItemNumber:D9}\n\"" +
                $"Description: {ItemDescription} | Price: ${ItemPrice}\n" +
                $"Quantity: {ItemQuantity} | Stock: {ItemStock}\n" +
                $"Purchase Date: {ItemPurchaseDate}\n" +
