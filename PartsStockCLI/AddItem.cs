@@ -13,7 +13,7 @@ public class AddItem
         Console.WriteLine("--------");
         Item item = new()
         {
-            ItemName = Read.RequiredText("Item Name: "),
+            ItemName = Read.RequiredText("Item Name: "), 
             ItemDescription = Read.Text("Item Description: "),
             ItemPrice = Read.Decimal("Item Price: "),
             ItemQuantity = Read.Int("Item Quantity: ", 1),
